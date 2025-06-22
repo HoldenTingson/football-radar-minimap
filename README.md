@@ -23,7 +23,44 @@ In modern football, tactical analysis has become a crucial determinant of team s
 * KMeans - Clusters the reduced-dimension features to classify players into two teams.
 
 ## System Implementation
+### Model Training Phase
+1. **Train football player detection model**
+   - Dataset preparation and annotation
+   - YOLOv8 model training for players, referees, and ball detection
+   
+2. **Train pitch keypoint detection model**
+   - Field boundary annotation
+   - YOLOv8 model training for pitch keypoint detection
 
+### Inference Phase
+1. **Object detection**
+   - Detect players, referees, and ball using trained football player detection model
+   - Extract bounding boxes and confidence scores
+
+2. **Team classification**
+   - Extract player image crops from detections
+   - Apply SigLIP feature extraction
+   - Use UMAP for dimensionality reduction
+   - Classify teams into home and away using K-means clustering
+
+3. **Field analysis**
+   - Detect pitch keypoints using trained pitch keypoint detection model
+   - Identify field boundaries and reference points
+
+4. **Output generation**
+   - Project pitch lines on output frame
+   - Overlay player positions with team color coding
+   - Display referees and ball tracking
 
 ## System Overview
+### Input Video
 
+https://github.com/user-attachments/assets/7f9543a0-81e7-4c9a-b0e1-1c624b0bc4d4
+
+### Output Video
+
+https://github.com/user-attachments/assets/c81f7aa3-d4cc-45a5-973e-1cf5cef3c9f4
+
+## UI Display
+
+![ui_display](https://github.com/user-attachments/assets/1f09ab5d-40b1-47d5-bcaa-a68f5e714e7e)
