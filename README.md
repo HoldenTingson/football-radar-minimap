@@ -11,11 +11,11 @@ In modern football, tactical analysis has become a crucial determinant of team s
 3. Minimap Overlay: Display a tactical minimap that shows the position and movement of the players, referees, and ball objects.
 
 ## Datasets
-| Dataset | Purpose |
-|-------|---------|
-| [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc) | Football Player Detection |
-| [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-field-detection-f07vi) | Pitch Keypoint Detection |
-| [![DFL - Bundesliga Data Shootout](https://img.shields.io/badge/Download-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/competitions/dfl-bundesliga-data-shootout) | Football Match Footage |
+| Dataset | Purpose | Source |
+|---------|---------|--------|
+| [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc) | Football Player Detection | Roboflow Universe |
+| [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-field-detection-f07vi) | Pitch Keypoint Detection | Roboflow Universe |
+| [![DFL - Bundesliga Data Shootout](https://img.shields.io/badge/Download-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/competitions/dfl-bundesliga-data-shootout) | Football Match Footage | Deutsche Fußball Liga e.V. |
 
 ## Models
 * YOLOv8 (Player Detection) - Detects players, referees, and the ball in the video.
